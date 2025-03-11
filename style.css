@@ -1,0 +1,42 @@
+/* beauty css */
+
+.box1,.box4,.box5{
+    background: aqua;
+}
+.box2,.box3{
+    background: blue;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    /* display: inline-grid; */
+    /* giá trị mặc định của cột và hàm trong grid */
+    /* grid-template-columns: auto;
+    grid-template-columns: auto; */
+   /* grid-template-columns:100px calc(100% - 100px) ;/*sử dụng calc():cột 2 luôn chiếm phần còn lại 1 cách sử dụng responsive thích ứng trên từng thiết bị */
+   /* grid-template-rows: 50px 100px 50px;
+    /* quy định gap dòng */
+/* grid-row-gap: 20px; */
+    /* quy định gap cột */
+/* grid-column-gap: 15px; */
+/* cú pháp viết tắt gap:row-gap column-gap */
+/* gap: 20px 20px; */
+/* repeat():lặp lại đỡ p viết nhiều */
+/* grid-template-columns: 100px repeat(3,50px); */
+/* grid-template-rows: 50px repeat(1,100px); */
+/* chia hàng và cột theo trọng số  */
+/* grid-template-columns: 1fr 2fr; */
+/* grid-template-rows:1fr 3fr 4fr ; */
+/* giá trị auto */
+/* grid-template-columns: 100px auto;auto của columns sẽ chiếm 100% không gian còn lại */
+/* grid-template-rows: 50px auto;auto của rows k hoạt động nó chỉ chứa vừa nội dung nó chứa */
+
+/* giá trị min,max */
+grid-template-columns: minmax(150px, 300px) minmax(200px, auto);
+grid-template-rows: repeat(2, minmax(50px, 80px));
+grid-auto-rows:50px;
+}
